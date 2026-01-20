@@ -1,0 +1,153 @@
+/* .information-user{
+  
+} */
+
+.user-profile {
+  max-width: 840px;
+  display: flex;
+  align-items: normal;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+
+.image-profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-profile > img {
+  border-radius: 50%;
+}
+
+.user-avatar {
+  object-fit: cover;
+  width: 150px;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.user-details {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.user-details p {
+  width: 100%;
+}
+
+.user-price {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #000;
+}
+
+.user-description {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 7%;
+  margin-bottom: 2px;
+  border-left: 1px solid #3333332e;
+}
+
+.user-interests {
+  width: auto;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.interest-selected {
+  background-color: var(--tertiary-color);
+  color: white;
+  padding: 8px 11px;
+  border-radius: 10px;
+  margin: 5px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.btn-back-reserve {
+  display: flex;
+  width: 102% auto;
+  justify-content: flex-end;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.alquilar-perfil {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+.btn-back-alquilar {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 100px;
+  /* margin-left: -64%; */
+}
+.user-center-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.verified-icon {
+  margin-right: 0.5rem;
+  margin-bottom: -0.1rem;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: -100%;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  margin-bottom: -0.25rem;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.comment-text {
+  padding: 16px 24px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: #fff;
+}
+
+.comment-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.comment-button {
+  font-family: Alata;
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

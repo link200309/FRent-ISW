@@ -1,0 +1,72 @@
+.body-add-AH{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 48px auto;
+}
+
+.container{
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-available{
+    width: 700px;
+}
+
+.days-to-week{
+    width: 90%;
+    margin-bottom: 4px;
+}
+
+.toggle-icon{
+    width: 36px;
+    color: var(--quaternary-color);
+}
+
+.toggle-icon-selected{
+    width: 36px;
+    color: var(--tertiary-color);
+}
+
+.unavailable-day{
+    width: 65%;
+    height: 48px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    text-align: center;
+    color: #aaa;
+}
+ .available-day{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 8px;
+ }
+.day > p{
+    display: inline;
+}
+
+.day{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.day-name{
+    width: 116px;
+}
+
+.button-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.hours-selector{
+    width: 160px;
+}

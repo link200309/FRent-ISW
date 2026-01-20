@@ -1,0 +1,235 @@
+
+.body-page-profile {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0px;
+  background: radial-gradient(ellipse at bottom, #fdc980 0%, #5f3501 100%);
+  height: 84vh;
+
+}
+
+.profile-name h2 {
+  font-size: var(--h2-size);
+  color: #ff9500;
+  margin: 20px 0px 0px 0px;
+}
+
+.profile-view {
+  position: relative;
+  display: flex;
+  width: 100%;
+  /* margin: 20px;
+  padding: 20px; */
+  justify-content: space-evenly;
+}
+
+.profile-image {
+  height: 300px;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px; /* Agregar la unidad de medida */
+  object-fit: cover;
+  animation: parpadear 4s infinite backwards;
+}
+
+@keyframes parpadear {
+  0% {
+    box-shadow: 0 0 15px #fa9530;
+  }
+
+  50% {
+    box-shadow: 0 0 15px transparent;
+  }
+  100% {
+    box-shadow: 0 0 15px #fa9530;
+  }
+}
+
+.shape-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.shape-background svg{
+  fill: rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.shape-a-profile{
+  bottom: -80px;
+  left: -80px;
+}
+.shape-b-profile{
+  top: -30px;
+  right: 70%;
+}
+
+.shape-c-profile{
+  top: -300px;
+  right: -300px;
+}
+
+.profile-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 28%;
+  padding: 0px 20px 0px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.profile-description h2{
+  margin: 0px 0px;
+}
+
+.profile-image-availability{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.availability-profile{
+  max-width: 100%;
+  margin-top: 4%;
+  padding: 0px 0px 0px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.availability-profile p{
+    margin: 1;
+}
+
+.profile-personal-information {
+  margin: 20px;
+}
+
+.label-information{
+  font-weight: 700;
+  margin: 5px 0px;
+}
+
+.form-body-container > h3 {
+  font-size: var(--h3-size);
+  text-align: center;
+}
+
+.colums-inputs-profile {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    minmax(200px, 1fr)
+  ); /* Ajusta el ancho de las columnas según el contenido */
+  column-gap: 20px; /* Espacio entre elementos */
+  row-gap: 1px;
+}
+
+.input-1c-profile,
+.input-2c-profile,
+.input-3c-profile {
+  width: 100%;
+}
+
+.input-1c-profile {
+  grid-column: 1/2; /* Ocupa una columna completa */
+}
+
+.input-2c-profile{
+  grid-column: 2/3; /* Ocupa dos columnas */
+}
+
+.input-3c-profile{
+  grid-column: 3/4; /* Ocupa dos columnas */
+}
+
+
+.colums-availability-profile {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(200px, 1fr)
+  ); /* Ajusta el ancho de las columnas según el contenido */
+}
+
+.btn-back{
+  position: absolute;
+  margin: 10px;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.comment-section {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--tertiary-color);
+}
+
+.comment-input {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-input button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #ff9500;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comments-list .comment {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.comments-list .comment p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.prev-perfil {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  margin-left: 5%;
+  width: 50%;
+}
+.viewReserv {
+  background-color: var(--tertiary-color);
+  color: #000;
+    padding: var(--high-button) var(--broad-button);
+    border-radius: 8px;
+    margin-right: 40%;
+    border: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+    width: 19em;
+}
+.viewReserv:hover {
+  background-color: var(--quaternary-color);
+  color: #fff;
+  
+}

@@ -1,0 +1,101 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: 90%; /* Aumenta el ancho del contenedor del calendario */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; 
+}
+
+.rbc-calendar {
+  background-color: #ffffff;
+  color: #000000; /* Texto negro */
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+  text-align: center;
+  color: #000000;
+  font-family: "Alata", sans-serif;
+  font-size: 18px; /* Tamaño del texto del encabezado */
+}
+
+.rbc-month-view {
+  background-color: #4457df80;
+  border-radius: 10px;
+}
+
+.rbc-header {
+  color: #000000;
+}
+
+.rbc-date-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #000000;
+}
+
+.rbc-today {
+  background-color: #fba834 !important; /* Color de fondo para el día actual */
+  border-radius: 6px;
+}
+
+/* Estilos para los eventos */
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  background-color: #3174ad;
+  color: #ffffff; /* Texto blanco */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  font-size: 14px; /* Tamaño de la fuente de los eventos */
+  width: 100%; /* Asegúrate de que los eventos no sobresalgan de los contenedores */
+  text-align: left;
+}
+
+/* Estilos para el botón de retroceso */
+.boton-calendar{
+  font-size: 50px;
+  color: #000;
+  margin: 20px;
+  
+}
+
+.boton-calendar:hover {
+  font-size: 55px;
+  color: var(--primary-color);
+  box-shadow: #3174ad;
+}
+.botones-calendario{
+  display: flex;
+  justify-content: space-between;
+}
+
+.botones-calendario button {
+  border: none;
+  color: #000;
+  background-color: var(--tertiary-color);
+  padding: 21px 22px 37px 22px;
+  height: 23px;
+  margin-top: 21px;
+  margin-right: 40%;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+/* Estilos para el fondo modal */
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  z-index: 999;
+}

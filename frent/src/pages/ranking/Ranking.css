@@ -1,0 +1,142 @@
+.content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.top-friends {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px 0;
+  }
+  
+  .top-friend {
+    margin: 0 10px;
+    text-align: center;
+  }
+
+
+  .top-friend.rank-2{
+    order: 1;
+  }
+
+  .top-friend.rank-1{
+    order: 2;
+  }
+
+  .top-friend.rank-3{
+    order: 3;
+  }
+  
+  .top-friend.rank-1 .profile-picture img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* border: 3px solid gold; */
+    order: 3;
+  }
+
+  .top-friend.rank-2 .profile-picture img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* border: 3px solid silver; */
+    order: 3;
+  }
+
+  .top-friend.rank-3 .profile-picture img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* border: 3px solid #CD7F32; */
+    order: 3;
+  }
+
+  .top-friend.rank-1 .profile-picture,
+  .top-friend.rank-2 .profile-picture,
+  .top-friend.rank-3 .profile-picture{
+    position: relative;
+  }
+
+  .top-friend.rank-1 .profile-picture .cup-icon{
+    color: gold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .top-friend.rank-2 .profile-picture .cup-icon{
+    color: silver;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .top-friend.rank-3 .profile-picture .cup-icon{
+    color: #CD7F32;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  
+  .rank {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .likes {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .friend-list {
+    width: 1020px;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+  }
+  
+  .friend-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .friend-item:last-child {
+    border-bottom: none;
+  }
+  
+  .profile-picture img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+
+  
+  .friend-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+  }
+  
+  .friend-name {
+    font-size: 18px;
+  }
+
+  .friend-name > a{
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .friend-likes {
+    font-size: 16px;
+    color: #666;
+  }
+  

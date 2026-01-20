@@ -1,0 +1,264 @@
+#pendings {
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  width: 60vw;
+
+}
+
+body {
+  font-family: "Alata", sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.11);
+  /* Fondo oscuro semi-transparente */
+  z-index: 998;
+  /* Coloca el fondo detrás del modal */
+  display: none;
+  /* Inicialmente oculto */
+}
+
+.overlay.active {
+  display: block;
+  /* Mostrar el fondo oscuro cuando el modal está activo */
+}
+
+
+.contV {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  /* Margen solo en la parte inferior */
+
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+
+}
+
+.pending {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 32px;
+  border-radius: 8px;
+  /* border: 1px solid #241f1f; */
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.time {
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.5);
+  /* Texto semi-transparente */
+}
+
+.request-info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.verified-date {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+
+.verified {
+  display: flex;
+  margin-right: 62px;
+  align-items: center;
+}
+
+.locationR {
+  display: flex;
+  justify-content: center;
+  color: black;
+  border-radius: 5px;
+
+}
+
+.description {
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 600px;
+  display: flex;
+  overflow: hidden;
+}
+
+.price,
+.descriptionLike {
+  background-color: var(--tertiary-color);
+  color: white;
+  padding: 8px 11px;
+  border-radius: 10px;
+  margin-top: 7px;
+  margin: 5px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  margin-left: 15px;
+  gap: 15px;
+}
+
+.pending-info {
+  display: flex;
+}
+
+.total-price {
+  display: flex;
+  justify-content: initial;
+}
+
+.btnV {
+  background-color: var(--primary-color);
+  padding: var(--high-button) var(--broad-button);
+  border-radius: 8px;
+  border: none;
+  color: #000;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  line-height: 24px;
+  background: #FF9C11;
+}
+
+.btnVR {
+  background-color: #fff;
+  padding: var(--high-button) var(--broad-button);
+  border-radius: 8px;
+  color: var(--secondary-color);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.btnVr:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.placeholder-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.placeholder-text {
+  text-align: center;
+  font-size: var(--h3-size);
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.details-button {
+  background-color: var(--tertiary-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Alata", sans-serif;
+}
+
+.details-button:hover {
+  background-color: var(--tertiary-color-darker);
+  color: rgb(10, 10, 10);
+}
+
+.details-button .icon {
+  margin-right: 10px;
+}
+
+/* Estilos para el precio y el icono de llave */
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.price-container .price {
+  background-color: var(--tertiary-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.price-container .icon {
+  color: black;
+}
+
+.price-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fotoperfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user-info2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+}
+/*for modal*/

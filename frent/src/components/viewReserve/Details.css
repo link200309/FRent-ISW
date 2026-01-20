@@ -1,0 +1,168 @@
+.modal1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /*background-color: antiquewhite;*/
+  background-color: white;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 527px;
+  height: 80vh;
+  /* borde */
+  z-index: 999;
+  overflow: auto;
+  border-radius: 10px;
+  padding: 24px 24px;
+}
+
+.modal1::-webkit-scrollbar {
+  width: 7px;
+  height: 2px;
+}
+
+.modal1::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  height: 3px;
+}
+
+.icon-location2 {
+  font-size: 24px; /* Tamaño fijo para el icono */
+}
+.modal-wrapper {
+  transition: opacity 0.3s ease;
+  /* Efecto de transición para la opacidad */
+  opacity: 0;
+  /* Inicialmente transparente */
+}
+
+.modal-wrapper.active {
+  opacity: 1;
+  /* Mostrar el modal con opacidad completa cuando esté activo */
+}
+
+
+body {
+  font-family: "Alata", sans-serif;
+}
+
+.container1 {
+  display: flex;
+  padding: 10px;
+  height: 200px;
+  width: 500px;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc;
+}
+
+.container1 img {
+  object-fit: cover;
+  width: 150px;
+}
+
+.detalle1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.verified-date1 {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+
+.verified1 {
+  display: flex;
+  margin-right: 62px;
+  align-items: center;
+}
+
+.locationR1 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  border-radius: 5px;
+
+}
+
+.request-info1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  /* Espacio entre cada detalle */
+  width: 100%;
+}
+
+.modal-header1 {
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  padding-bottom: 12px;
+}
+
+.modal-header1 .FaSeach1 {
+  margin-right: 5px;
+}
+
+.modal1 .AiOutlineClose1 {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  align-items: right;
+}
+
+
+.cuerpo1 {
+  margin-top: 10px;
+  font-size: 15px; 
+  line-height: 0.6;
+  padding: 0 36px 22px;
+}
+
+
+.descripcion {
+  font-size: 15px; 
+  line-height: 1.5;
+}
+
+.pie1 {
+  bottom: 0;
+  /* Position at the bottom */
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.pie1 span {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.PrecioDetail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 21px;
+  margin-top: -18px;
+}
+
+.fotoperfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+}

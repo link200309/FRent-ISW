@@ -1,0 +1,143 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Alata", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.login-background{
+  background-image: url('../../assets/img/sisi.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.login-title{
+  text-align: center;
+  font-size: 45px;
+  margin: 0px;
+  color: #f4f4f4;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 50px 50px;
+  gap: 10px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.login-info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo {
+  width: 110%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.login-form-container {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-color: #00000051;
+  box-shadow: 0px 0px 5px 0px gray;
+  border-radius:20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-group input,
+.login-button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 400px;
+}
+
+.login-form-container label{
+  color: aliceblue;
+}
+
+
+.forgot-password {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.register-link, .login-link{
+  font-size: 1.0rem;
+  color: #4d007c;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  color: white;
+  background-color: #333A73;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 422px;
+}
+
+.login-button:hover {
+  background-color: #252c4a;
+}
+/*
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+*/
+.error-input {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.shape-1{
+    left: -333px;
+  position: relative;
+  z-index: -999;
+}

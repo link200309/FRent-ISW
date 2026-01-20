@@ -1,0 +1,114 @@
+.photo-container {
+    width: 800px;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.photo-container h2 {
+    margin-top: 0;
+}
+
+.upload-box {
+    width: 400px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.upload-box i {
+    font-size: 64px;
+    color: #ccc;
+}
+
+.upload-box p:first-of-type {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.upload-box p:last-of-type {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.upload-button {
+    background-color: #fff;
+    padding: var(--high-button) var(--broad-button);
+    border-radius: 8px;
+    color: var(--secondary-color);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+    font-weight: 600;
+    line-height: 24px;
+    border: 2px solid var(--secondary-color);
+}
+
+.upload-button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.preview-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.remove-button {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: -420px;
+    right: 120px;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 50%;
+    /* padding: 8px; */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.remove-button i {
+    color: #fff;
+    font-size: 16px;
+}
+
+.preview-image {
+    width: 420px;
+    height: 400px;
+    position: absolute;
+    top: -410px;
+}
+
+
+.next-button {
+    background-color: var(--primary-color);
+    padding: var(--high-button) var(--broad-button);
+    border-radius: 8px;
+    border: none;
+    color: #000;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.next-button:hover {
+    background: #ff9c11;
+}

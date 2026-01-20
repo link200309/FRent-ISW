@@ -1,0 +1,153 @@
+.mis-amigos {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mis-amigos h1 {
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 20px;
+  width: 60%; 
+  text-align: center; 
+}
+
+.amigo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid var(--secondary-color);
+  border-width: 2px 10px;
+  background-color: var(--light-grey);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+.amigo-info {
+  display: flex;
+  align-items: center;
+}
+
+.link-list-friend {
+  color: #007bff;
+}
+
+.amigo-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.amigo-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.amigo-details strong {
+  font-size: 1.1em;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.amigo-details p {
+  font-size: 0.9em;
+  color: black;
+  margin: 0;
+}
+
+.amigo-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.amigo-action span {
+  font-size: 0.8em;
+  color: var(--dark-grey);
+  margin-bottom: 10px;
+}
+
+.amigo-action .action-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.amigo-action .like-button {
+  background: none; /* Eliminar el fondo */
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.comment-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.comment-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.comment-form h2 {
+  margin-top: 0;
+}
+
+.comment-form textarea {
+  width: 96%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-buttons button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-buttons button[type="submit"] {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.form-buttons button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+.form-buttons button[type="button"] {
+  background-color: #ccc;
+  color: black;
+}
+
+.form-buttons button[type="button"]:hover {
+  background-color: #aaa;
+}

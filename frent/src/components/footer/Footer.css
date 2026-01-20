@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+.pie-pagina{
+    position: absolute;
+    width: 100%;
+    /* background-color: #0a1a2a; */
+    background-color: var(--secondary-color);
+}
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    flex: 1; /* Agregado */
+  }
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+ .red-social{
+    width: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+ }
+
+.pie-pagina .grupo-2 {
+    background-color: var(--secondary-color);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+  }
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+.icon-footer{
+    margin-top: 13px;
+    font-size: 20px;
+    margin-right: 9px;
+}
+
+.icon-footer{
+    color: #fff;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

@@ -1,0 +1,76 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../assets/img/principalHome.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-containerClient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.4)),url('../../assets/img/homeClient.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-containerFriend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.4)),url('../../assets/img/homeFriend.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.home-content {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  /*-webkit-text-stroke: 1px black;*/
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fffefe;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+  .home-description {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,60 @@
+.listaEvento {
+    background-color: #f2eafa;
+    border-radius: 10px;
+    width: 410px;
+    height: 500px;
+    margin-top: 50px;
+    place-items: center;
+    border: 1px solid;
+    overflow: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 999; 
+  }
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1.5rem;
+  }
+  
+  .titleE {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+.date-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon2{
+  font-size: 1.5rem;
+  color: #000;
+  margin: 10px;
+}
+  .reserv-container {
+    border: 1px solid;
+    border-radius: 8px;
+    margin: 10px 20px 5px 20px;
+    color: #0c0b0b;
+    padding: 0 50px;
+  }
+  
+  .reserv-container h3 {
+    color: chocolate;
+  }
+  

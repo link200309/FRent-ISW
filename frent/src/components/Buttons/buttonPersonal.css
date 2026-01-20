@@ -1,0 +1,17 @@
+.personal-button>button {
+    background-color: #fff;
+    padding: var(--high-button) 5.55rem;
+    /* Aquí se cambia el valor de --broad-button */
+    border-radius: 8px;
+    color: var(--secondary-color);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+    font-weight: 600;
+    line-height: 24px;
+    border: 2px solid var(--secondary-color);
+    width: 100%;
+}
+
+.personal-button>button:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
